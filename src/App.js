@@ -23,10 +23,13 @@ function App() {
   console.log(users);
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Adding a new doc to the collection
     // db.collection("users").add({
     //   fullname,
     //   email,
     // });
+
+    // Changing an existing docs
     db.collection("users").doc("yu6Fa64EVf18WSrTsmiY").set({
       fullname,
       email,
